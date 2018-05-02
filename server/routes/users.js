@@ -9,4 +9,10 @@ router.get('/', function(req, res, next) {
   });
 });
 
+// router.get('/:id', function(reg, res, next) {
+//   var id = req.param('id');
+//   knex('users').where('id',id).select().then( function(data) {
+//       res.send(data);
+//     });
+// });
 module.exports = router;
