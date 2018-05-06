@@ -4,7 +4,7 @@ var knex = require('../helpers/knex');
 
 router.get('/', function(reg, res, next) {
   var id = req.param('id');
-  knex('users').where('id',1).select().then( function(data) {
+  knex('users').select().then( function(data) {
       res.send(data);
     });
 });

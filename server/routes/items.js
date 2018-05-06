@@ -8,11 +8,4 @@ router.get('/', function(req, res, next) {
   });
 });
 
-router.post('/:id', function(reg, res, next) {
-    var id = req.params.id;
-    knex('items').select().where('id',id).then( function(data) {
-        res.send(data);
-      });
-});
-
 module.exports = router;
